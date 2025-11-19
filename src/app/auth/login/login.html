@@ -1,0 +1,60 @@
+
+
+<main class="max-w-md mx-auto mt-10 p-6 bg-white rounded shadow">
+  <h2 class="text-2xl font-bold mb-6 text-center">Login</h2>
+
+  <form [formGroup]="loginForm" (ngSubmit)="onSubmit()" class="space-y-5">
+    <!-- Email Field -->
+    <mat-form-field appearance="fill" class="w-full">
+      <mat-label>Email</mat-label>
+      <input matInput formControlName="email" type="email" autocomplete="email" placeholder="you@example.com" required />
+      <mat-error *ngIf="loginForm.get('email')?.hasError('required') && loginForm.get('email')?.touched">
+        Email is required.
+      </mat-error>
+      <mat-error *ngIf="loginForm.get('email')?.hasError('email') && loginForm.get('email')?.touched">
+        Please enter a valid email.
+      </mat-error>
+    </mat-form-field>
+
+    <!-- Password Field -->
+    <mat-form-field appearance="fill" class="w-full">
+      <mat-label>Password</mat-label>
+      <input matInput formControlName="password" type="password" autocomplete="current-password" placeholder="Enter password" required />
+      <mat-error *ngIf="loginForm.get('password')?.hasError('required') && loginForm.get('password')?.touched">
+        Password is required.
+      </mat-error>
+    </mat-form-field>
+
+    <!-- Submit Button -->
+    <button mat-raised-button color="primary" class="w-full" [disabled]="loginForm.invalid || loading">
+      {{ loading ? 'Logging in...' : 'Login' }}
+    </button>
+
+    <!-- Forgot Password Link -->
+    <div class="text-right">
+      <a routerLink="/auth/forgot-password" class="text-sm text-blue-600 hover:underline">
+        Forgot password?
+      </a>
+    </div>
+
+    <!-- Register Link -->
+    <div class="text-center text-sm mt-4">
+      <span class="text-gray-600 dark:text-gray-400">Don’t have an account?</span>
+      <a routerLink="/auth/register" class="text-blue-600 hover:underline ml-1">
+        Register
+      </a>
+    </div>
+  </form>
+</main>
+
+
+<!-- <div class="space-x-6 flex items-center justify-center mt-6">
+  <a routerLink="/auth/login" routerLinkActive="font-bold border-b-2 border-indigo-500"
+     class="text-gray-600 dark:text-gray-400 hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors duration-200 py-1">
+    Login
+  </a>
+  <a routerLink="/auth/register" routerLinkActive="font-bold border-b-2 border-indigo-500"
+     class="text-gray-600 dark:text-gray-400 hover:text-indigo-600 dark:hover:text-indigo-400 transition-colors duration-200 py-1">
+    Register
+  </a>
+</div> -->

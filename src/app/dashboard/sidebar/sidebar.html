@@ -1,0 +1,61 @@
+<nav class="space-y-6 text-sm text-gray-800 py-2">
+  <!-- Masters -->
+  <div>
+    <h3 class="font-semibold text-gray-600 uppercase tracking-wide">Masters</h3>
+    <ul class=" mt-2 space-y-1">
+      <li><a routerLink="/dashboard/masters/item" routerLinkActive="active" class="nav-link"><mat-icon>inventory_2</mat-icon> Item Master</a></li>
+      <li><a routerLink="/dashboard/masters/unit" routerLinkActive="active" class="nav-link"><mat-icon>straighten</mat-icon> Unit Master</a></li>
+      <li><a routerLink="/dashboard/masters/category" routerLinkActive="active" class="nav-link"><mat-icon>category</mat-icon> Category Master</a></li>
+      <li><a routerLink="/dashboard/masters/supplier" routerLinkActive="active" class="nav-link"><mat-icon>local_shipping</mat-icon> Supplier Master</a></li>
+      <li><a routerLink="/dashboard/masters/customer" routerLinkActive="active" class="nav-link"><mat-icon>person</mat-icon> Customer Master</a></li>
+    </ul>
+  </div>
+
+  <!-- Transactions -->
+  <div>
+    <h3 class="font-semibold text-gray-600 uppercase tracking-wide">Transactions</h3>
+    <ul class=" mt-2 space-y-1">
+      <li><a routerLink="/dashboard/transactions/purchase" routerLinkActive="active" class="nav-link"><mat-icon>shopping_cart</mat-icon> Purchase Entry</a></li>
+      <li><a routerLink="/dashboard/transactions/sales" routerLinkActive="active" class="nav-link"><mat-icon>sell</mat-icon> Sales Entry</a></li>
+      <li><a routerLink="/dashboard/transactions/purchase-return" routerLinkActive="active" class="nav-link"><mat-icon>undo</mat-icon> Purchase Return</a></li>
+      <li><a routerLink="/dashboard/transactions/sales-return" routerLinkActive="active" class="nav-link"><mat-icon>undo</mat-icon> Sales Return</a></li>
+      <li><a routerLink="/dashboard/transactions/stock-adjustment" routerLinkActive="active" class="nav-link"><mat-icon>tune</mat-icon> Stock Adjustment</a></li>
+      <li><a routerLink="/dashboard/transactions/transfer" routerLinkActive="active" class="nav-link"><mat-icon>swap_horiz</mat-icon> Transfer For Stock</a></li>
+    </ul>
+  </div>
+
+  <!-- Reports -->
+  <div>
+    <h3 class="font-semibold text-gray-600 uppercase tracking-wide">Reports</h3>
+    <ul class="pl-2 mt-2 space-y-1">
+      <li><a routerLink="/dashboard/reports/stock" routerLinkActive="active" class="nav-link"><mat-icon>bar_chart</mat-icon> Stock Report</a></li>
+      <li><a routerLink="/dashboard/reports/ledger" routerLinkActive="active" class="nav-link"><mat-icon>receipt_long</mat-icon> Item Ledger</a></li>
+      <li><a routerLink="/dashboard/reports/sales" routerLinkActive="active" class="nav-link"><mat-icon>trending_up</mat-icon> Sales Report</a></li>
+      <li><a routerLink="/dashboard/reports/purchase" routerLinkActive="active" class="nav-link"><mat-icon>trending_down</mat-icon> Purchase Report</a></li>
+      <li><a routerLink="/dashboard/reports/profit-loss" routerLinkActive="active" class="nav-link"><mat-icon>show_chart</mat-icon> Profit & Loss</a></li>
+      <li><a routerLink="/dashboard/reports/low-stock" routerLinkActive="active" class="nav-link"><mat-icon>warning</mat-icon> Low Stock Alert</a></li>
+    </ul>
+  </div>
+
+  <!-- Utilities -->
+  <div>
+    <h3 class="font-semibold text-gray-600 uppercase tracking-wide">Utilities</h3>
+    <ul class="pl-2 mt-2 space-y-1">
+      <li><a routerLink="/dashboard/utilities/import-export" routerLinkActive="active" class="nav-link"><mat-icon>import_export</mat-icon> Import / Export</a></li>
+      <li><a routerLink="/dashboard/utilities/backup" routerLinkActive="active" class="nav-link"><mat-icon>backup</mat-icon> Backup / Restore</a></li>
+      <li><a routerLink="/dashboard/utilities/user-management" routerLinkActive="active" class="nav-link"><mat-icon>group</mat-icon> User Management</a></li>
+      <li><a routerLink="/dashboard/utilities/roles" routerLinkActive="active" class="nav-link"><mat-icon>admin_panel_settings</mat-icon> Role & Permissions</a></li>
+    </ul>
+  </div>
+
+  <!-- Settings -->
+  <div>
+    <h3 class="font-semibold text-gray-600 uppercase tracking-wide">Settings</h3>
+    <ul class="pl-2 mt-2 space-y-1">
+      <li><a routerLink="/dashboard/settings/company" routerLinkActive="active" class="nav-link"><mat-icon>business</mat-icon> Company Profile</a></li>
+      <li><a routerLink="/dashboard/settings/tax" routerLinkActive="active" class="nav-link"><mat-icon>percent</mat-icon> Tax Settings</a></li>
+      <li><a routerLink="/dashboard/settings/currency" routerLinkActive="active" class="nav-link"><mat-icon>currency_exchange</mat-icon> Currency Settings</a></li>
+      <li><a routerLink="/dashboard/settings/invoice" routerLinkActive="active" class="nav-link"><mat-icon>description</mat-icon> Invoice Templates</a></li>
+    </ul>
+  </div>
+</nav>
